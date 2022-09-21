@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.navigation.ui.AppBarConfiguration;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -46,7 +45,7 @@ public class LoadingScreen extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 2000);
+        }, 500);
     }
 
 
