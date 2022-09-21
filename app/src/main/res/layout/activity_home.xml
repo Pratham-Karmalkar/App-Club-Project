@@ -25,67 +25,65 @@
             android:layout_height="wrap_content">
 
 
+            <ImageView
+                android:id="@+id/logoView"
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolb"
+                app:srcCompat="@drawable/mcoe_it" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolb"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!--Redirects to about activity-->
+
+
             <RelativeLayout
                 android:id="@+id/relativeLayoutWel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#F8F5F5 "
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="#F8F5F5"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolb"
-                app:layout_constraintVertical_bias="0.0">
+                app:layout_constraintTop_toBottomOf="@+id/logoView">
+
 
                 <ImageView
                     android:id="@+id/mainPagePh1"
-                    android:layout_width="276dp"
-                    android:layout_height="101dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="136dp"
+                    android:layout_marginStart="41dp"
 
-                    android:layout_marginTop="2dp"
-                    android:layout_marginEnd="-2dp"
+                    android:layout_marginTop="83dp"
+                    android:layout_marginEnd="40dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:srcCompat="@drawable/home_cover_image" />
 
-                <TextView
-                    android:id="@+id/welcomTo"
-                    android:layout_width="142dp"
-                    android:layout_height="70dp"
+                <ImageView
+                    android:id="@+id/wel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="66dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="2dp"
-                    android:layout_marginTop="-6dp"
-                    android:layout_marginEnd="267dp"
-                    android:fontFamily="@font/inter_bold"
-                    android:gravity="center"
-                    android:text="Welcome To Department Of"
-                    android:textColor="@color/black"
-                    android:textSize="9sp"
-                    android:textStyle="bold"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
-                    android:id="@+id/i"
-                    android:layout_width="118dp"
-                    android:layout_height="77dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="26dp"
-                    android:layout_marginEnd="287dp"
-                    android:fontFamily="@font/inter_bold"
-                    android:gravity="center"
-                    android:text="Information Technology"
-                    android:textColor="@color/red"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
+                    android:layout_marginStart="131dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="118dp"
+                    android:background="@drawable/welcome_to"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent" />
 
@@ -93,350 +91,282 @@
 
             <RelativeLayout
                 android:id="@+id/relativeLayoutAbout"
-                android:layout_width="407dp"
-                android:layout_height="275dp"
-                android:background="#FFF "
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#F8F5F5"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/relativeLayoutWel"
-                app:layout_constraintVertical_bias="0.023">
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayoutWel">
 
-                <ImageView
-                    android:id="@+id/hodPhoto"
-                    android:layout_width="99dp"
-                    android:layout_height="96dp"
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/about_us_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="51dp"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="48dp"
-                    android:layout_marginBottom="153dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:srcCompat="@drawable/hod_profile_picture" />
-
-                <ImageView
-                    android:id="@+id/icon"
-                    android:layout_width="45dp"
-                    android:layout_height="47dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="278dp"
-                    android:layout_marginBottom="223dp"
+                    android:layout_marginStart="179dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="179dp"
                     android:background="@color/black"
+                    app:civ_border_width="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:srcCompat="@drawable/home_about_department_images_logo" />
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/home_about_department_images_logo"
+                    tools:visibility="visible" />
 
                 <TextView
                     android:id="@+id/aboutUs"
-                    android:layout_width="187dp"
-                    android:layout_height="36dp"
+                    android:layout_width="183dp"
+                    android:layout_height="81dp"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="54dp"
-                    android:layout_marginEnd="205dp"
-                    android:layout_marginBottom="185dp"
+                    android:layout_marginStart="113dp"
+                    android:layout_marginTop="72dp"
+                    android:layout_marginEnd="114dp"
                     android:fontFamily="@font/inter_bold"
                     android:gravity="center"
                     android:text="About Department"
                     android:textColor="#000000"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
 
+                    android:textSize="18dp"
+                    android:textStyle="bold"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
                     android:id="@+id/aboutDept"
-                    android:layout_width="203dp"
-                    android:layout_height="172dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginBottom="13dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="153dp"
+                    android:layout_marginEnd="16dp"
                     android:background="@drawable/rounded_corners"
                     android:fontFamily="3@font/inter"
                     android:justificationMode="inter_word"
-                    android:padding="5sp"
-                    android:text="The Information Technology department of  P.E.S's Modern College of Engineering, Pune started in 2006 with an intake capacity of 60 students. This later increased to 120 from the year 2011-2012.
-The department of Information Technology at P.E.S's Modern College of Engineering is one of the few professionally runs premier Institutes working for the accomplishment of a mission to develop skilled IT professionals, by offering value-based quality education."
+                    android:lineHeight="23dp"
+                    android:padding="18dp"
+                    android:text="@string/about_us"
                     android:textColor="#003A58"
-                    android:textSize="9sp"
-                    android:textStyle="bold" />
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/readMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutDept"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="139dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="141dp"
+                    android:text="Read More"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutHod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#F8F5F5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayoutAbout">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/hodPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="151dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="150dp"
+                    android:background="@drawable/hod_profile_picture"
+                    app:civ_border_width="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    tools:visibility="visible" />
 
                 <TextView
                     android:id="@+id/hodDesc"
-                    android:layout_width="157dp"
-                    android:layout_height="40dp"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hodPhoto"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="13dp"
-                    android:layout_marginBottom="118dp"
+                    android:layout_marginStart="86dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="86dp"
                     android:fontFamily="@font/inter_bold"
                     android:gravity="center"
                     android:justificationMode="inter_word"
                     android:text="DR.MRS.S.D.DESHPANDE"
                     android:textColor="@color/red"
-                    android:textSize="10sp"
+                    android:textSize="16dp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/hodPosition"
-                    android:layout_width="149dp"
-                    android:layout_height="31dp"
+                    android:layout_width="277dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hodPhoto"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="21dp"
-                    android:layout_marginBottom="110dp"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginEnd="66dp"
                     android:fontFamily="@font/inter_bold"
-                    android:gravity="center"
+                    android:gravity="center|top"
                     android:justificationMode="inter_word"
                     android:text="Head Of Department"
                     android:textColor="#726E6E"
-                    android:textSize="7sp"
+                    android:textSize="11dp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/intake"
-                    android:layout_width="160dp"
-                    android:layout_height="102dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="229dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/rounded_corners"
-                    android:fontFamily="3@font/inter"
-                    android:justificationMode="inter_word"
-                    android:textColor="@color/red"
-                    android:textSize="9sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/intake1"
-                    android:layout_width="88dp"
-                    android:layout_height="37dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="273dp"
-                    android:layout_marginBottom="73dp"
-                    android:fontFamily="3@font/inter"
-                    android:gravity="center"
-                    android:justificationMode="inter_word"
-                    android:text="UG INTAKE"
-                    android:textColor="@color/black"
-                    android:textSize="9sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/intake2"
+                <RelativeLayout
+                    android:id="@+id/relDescrip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="285dp"
-                    android:layout_marginEnd="64dp"
-                    android:layout_marginBottom="72dp"
-                    android:fontFamily="3@font/inter"
-                    android:gravity="center"
-                    android:justificationMode="inter_word"
-                    android:text="120"
-                    android:textColor="@color/red"
-                    android:textSize="8sp"
-                    android:textStyle="bold" />
+                    android:layout_marginStart="58dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginEnd="58dp"
+                    android:background="@drawable/rounded_corners"
+                    android:paddingBottom="50dp">
 
-                <TextView
-                    android:id="@+id/intake3"
-                    android:layout_width="121dp"
-                    android:layout_height="39dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="250dp"
-                    android:layout_marginEnd="36dp"
-                    android:layout_marginBottom="45dp"
-                    android:fontFamily="3@font/inter"
-                    android:gravity="center"
-                    android:justificationMode="inter_word"
-                    android:text="pesmcoe@moderncoe.edu.in"
-                    android:textColor="@color/black"
-                    android:textSize="8sp"
 
-                    android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/intake1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
 
-                <TextView
-                    android:id="@+id/intake4"
-                    android:layout_width="122dp"
-                    android:layout_height="37dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="252dp"
-                    android:layout_marginEnd="33dp"
-                    android:layout_marginBottom="31dp"
-                    android:fontFamily="3@font/inter"
-                    android:gravity="center"
-                    android:justificationMode="inter_word"
-                    android:text="(020) 25533638, 25533648."
-                    android:textColor="@color/black"
-                    android:textSize="8sp"
-                    android:textStyle="bold" />
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="71dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="71dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
+                        android:text="UG INTAKE"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/intake2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/intake1"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
+                        android:text="120"
+                        android:textColor="@color/red"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/emailId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/intake2"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-1dp"
+                        android:layout_marginTop="33dp"
+                        android:layout_marginEnd="2dp"
+                        android:autoLink="email"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
+                        android:padding="5dp"
+                        android:text="@string/email"
+                        android:textColor="#000"
+                        android:textColorLink="#0628cf"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/emailId"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:autoLink="phone"
+                        android:drawableLeft="@drawable/ic_phn"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
+                        android:text="(020) 25533638, 25533648."
+                        android:textColor="@color/black"
+                        android:textColorLink="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/hodProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/emailId"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="81dp"
+                        android:layout_marginTop="65dp"
+                        android:layout_marginEnd="82dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:drawableLeft="@drawable/ic_download"
+                        android:text="Hod Profile"
+                        android:textColor="#C00000"
+                        android:textSize="10sp"
+                        app:iconTint="#B8B8B8" />
+                </RelativeLayout>
+
 
                 <!--Redirects to about activity-->
-                <TextView
-                    android:id="@+id/readMore"
-                    android:layout_width="87dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="76dp"
-                    android:layout_marginEnd="244dp"
-                    android:layout_marginBottom="18dp"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="Read More..."
-                    android:textColor="@color/red"
-                    android:textSize="10sp" />
 
 
             </RelativeLayout>
-
-
-            <RelativeLayout
-                android:id="@+id/hdr"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="68dp"
-                    android:layout_height="69dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#FFFFFF"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/logo" />
-
-                <TextView
-                    android:id="@+id/trustNmTxt"
-                    android:layout_width="229dp"
-                    android:layout_height="16dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="101dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="81dp"
-                    android:fontFamily="@font/inter_bold"
-                    android:gravity="center"
-                    android:text="Progressive Education Society's"
-                    android:textColor="#002031 "
-                    android:textSize="11sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.576"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/collegeName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="71dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_marginEnd="10dp"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="MODERN COLLEGE OF ENGINEERING, PUNE"
-                    android:textColor="#C00000"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/imageView"
-                    app:layout_constraintTop_toBottomOf="@+id/trustNmTxt" />
-
-                <TextView
-                    android:id="@+id/collegeAffliation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="13dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="105dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginEnd="80dp"
-                    android:fontFamily="@font/inter_bold"
-                    android:gravity="center"
-                    android:text="Approved by AICTE, Affiliated to Savitribai Phule Pune University\n"
-                    android:textColor="#002031 "
-                    android:textSize="8sp"
-                    android:textStyle="normal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.617"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/collegeName" />
-
-                <TextView
-                    android:id="@+id/dashes"
-                    android:layout_width="437dp"
-                    android:layout_height="11dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="62dp"
-                    android:fontFamily="@font/inter"
-                    android:gravity="center"
-                    android:text="-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
-                    android:textColor="@color/black"
-                    android:textSize="10sp"
-                    android:textStyle="normal"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/collegeAffliation"
-                    app:layout_constraintVertical_bias="0.0" />
-
-            </RelativeLayout>
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolb"
-                android:layout_width="48dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="4dp"
-                android:background="?attr/colorPrimary"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/hdr" />
 
             <LinearLayout
                 android:id="@+id/phto"
-                android:layout_width="389dp"
-                android:layout_height="334dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp"
                 android:paddingBottom="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/relativeLayoutAbout">
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayoutHod"
+                app:layout_constraintVertical_bias="0.0">
 
 
                 <TextView
@@ -449,8 +379,8 @@ The department of Information Technology at P.E.S's Modern College of Engineerin
 
                 <com.smarteist.autoimageslider.SliderView
                     android:id="@+id/imageSlider"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
                     android:layout_gravity="right"
                     app:sliderAnimationDuration="600"
                     app:sliderAutoCycleDirection="back_and_forth"
@@ -464,7 +394,10 @@ The department of Information Technology at P.E.S's Modern College of Engineerin
                     app:sliderIndicatorSelectedColor="@color/red"
                     app:sliderIndicatorUnselectedColor="#FFF"
                     app:sliderScrollTimeInSec="6"
-                    app:sliderStartAutoCycle="true" />
+                    app:sliderStartAutoCycle="true">
+
+
+                </com.smarteist.autoimageslider.SliderView>
 
 
             </LinearLayout>
@@ -475,18 +408,18 @@ The department of Information Technology at P.E.S's Modern College of Engineerin
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/sideNav"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start|left"
-        android:layout_margin="130dp"
-        android:layout_marginHorizontal="150dp"
-        android:fitsSystemWindows="false"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_margin="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:fitsSystemWindows="true"
         android:fontFamily="@font/inter"
         android:foregroundGravity="center"
         android:padding="10sp"
         app:drawerLayoutCornerSize="20dp"
         app:itemTextColor="@color/red"
-
+        app:headerLayout="@layout/nav_header"
         app:menu="@menu/navigation_menu"
         tools:visibility="gone">
 
