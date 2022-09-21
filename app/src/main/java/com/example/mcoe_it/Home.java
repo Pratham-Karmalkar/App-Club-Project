@@ -1,6 +1,7 @@
 package com.example.mcoe_it;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.navigation.NavigationView;
@@ -9,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatDelegate;
@@ -20,6 +23,7 @@ import com.smarteist.autoimageslider.SliderView;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
 //import android.widget.Toolbar;
 import androidx.appcompat.widget.Toolbar;
@@ -130,6 +134,18 @@ public class Home extends AppCompatActivity {
                 //Intent aboutUs = new Intent(MainActivity.this,AbouUs)
             }
         });
+
+
+        //Hod Profile Redirection
+      Button hodProfile = findViewById(R.id.hodProfile);
+      hodProfile.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Uri uri = Uri.parse("http://moderncoe.edu.in/pdf/InfoTechpdf/HOD-Profile-Info-tech.pdf");
+              Intent intent= new Intent(Intent.ACTION_VIEW, uri);
+              startActivity(intent);
+          }
+      });
 
     }
 

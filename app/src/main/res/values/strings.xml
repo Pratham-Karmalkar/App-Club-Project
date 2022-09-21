@@ -14,4 +14,6 @@
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
     <string name="title_activity_loading_screen">LoadingScreen</string>
+    <string name="about_us">The Information Technology department of P.E.S\'s Modern College of Engineering, Pune started in 2006 with an intake capacity of 60 students. This later increased to 120 from the year 2011-2012. The department of Information Technology at P.E.S\'s Modern College of Engineering is one of the few professionally runs premier Institutes working for the accomplishment of a mission to develop skilled IT professionals, by offering value-based quality education.</string>
+    <string name="email"><u>pesmcoe@moderncoe.edu.in</u></string>
 </resources>
