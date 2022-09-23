@@ -53,6 +53,7 @@ public class Home extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawLyt);
         sideNav = findViewById(R.id.sideNav);
         toolbar = findViewById(R.id.toolb);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.nav_open, R.string.nav_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
@@ -71,8 +72,8 @@ public class Home extends AppCompatActivity {
                         break;
 
                     case R.id.about:
-                         /*Intent about = new Intent(MainActivity.this,<about_activity_name>.class);
-                          startActivity(about);*/
+                         Intent about = new Intent(Home.this,AboutUsActivity.class);
+                          startActivity(about);
                         finish();
                         break;
 
@@ -131,7 +132,8 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //redirecting to about us activity
-                //Intent aboutUs = new Intent(MainActivity.this,AbouUs)
+                Intent aboutUs = new Intent(Home.this,AboutUsActivity.class);
+                startActivity(aboutUs);
             }
         });
 

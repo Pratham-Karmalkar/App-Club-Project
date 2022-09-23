@@ -37,7 +37,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolb"
                 android:layout_width="500dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:background="?attr/colorPrimary"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
@@ -341,7 +341,7 @@
                         android:layout_marginEnd="82dp"
                         android:backgroundTint="#FFFFFF"
                         android:drawableLeft="@drawable/ic_download"
-                        android:text="Hod Profile"
+                        android:text="Hod\nProfile"
                         android:textColor="#C00000"
                         android:textSize="10sp"
                         app:iconTint="#B8B8B8" />
@@ -421,7 +421,7 @@
         app:itemTextColor="@color/red"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/navigation_menu"
-        tools:visibility="gone">
+        tools:visibility="visible">
 
     </com.google.android.material.navigation.NavigationView>
 
