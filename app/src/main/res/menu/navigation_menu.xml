@@ -15,6 +15,11 @@
         android:title="About" />
 
     <item
+        android:id="@+id/labs"
+        android:icon="@drawable/ic_labs"
+        android:title="Labs" />
+
+    <item
         android:id="@+id/gall"
         android:icon="@drawable/ic_gal"
         android:title="Gallery" />

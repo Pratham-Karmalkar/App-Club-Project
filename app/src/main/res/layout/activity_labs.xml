@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawLyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LabsActivity"
+    tools:openDrawer="start">
+
+
+    <ScrollView
+        android:id="@+id/scrollViewMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constLytMP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+
+            <ImageView
+                android:id="@+id/logoView"
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolb"
+                app:srcCompat="@drawable/mcoe_it" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolb"
+                android:layout_width="900dp"
+                android:layout_height="40dp"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutWel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F8F5F5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logoView">
+
+
+                <ImageView
+                    android:id="@+id/mainPagePh1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="128dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="69dp"
+                    android:layout_marginEnd="9dp"
+                    android:background="@drawable/about_cover_image"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/labs"
+                    android:layout_width="197dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="107dp"
+                    android:layout_marginLeft="107dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="106dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal|top"
+                    android:text="Labs"
+                    android:textColor="@color/red"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tableRelLyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayoutWel">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="2dp">
+
+                    <TableRow
+                        android:background="#E7E7E7"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+
+                            android:background="#E7E7E7"
+                            android:fontFamily="sans-serif"
+                            android:gravity="start|center"
+                            android:text="Sr.no."
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#E7E7E7"
+                            android:fontFamily="@font/inter_bold"
+                            android:gravity="center"
+                            android:text="Lab"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_gravity="center"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#E7E7E7"
+                            android:fontFamily="@font/inter_bold"
+                            android:gravity="center"
+                            android:text="Lab Incharge"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="start|center"
+                            android:text="1."
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Programming Lab-I"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Mrs. S. A. Kulkarni"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="start|center"
+                            android:text="2."
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Programming Lab-II"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Ms. D. A. Bhanage"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="start|center"
+                            android:text="3."
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Software Lab-I"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Mrs. S. S. Bhavsar"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="start|center"
+                            android:text="4."
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Software Lab-II"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Ms. R. S. Sadafule"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="start|center"
+                            android:text="5."
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Operating Systems Lab"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text=" Mrs. Y. D. Fatangare"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="left"
+                            android:text="6."
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Network Lab"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Mr. C. A. Ghuge"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="left"
+                            android:text="7."
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Hardware Lab"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Ms. Poonam Rakibe"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#FFF"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="left"
+                            android:text="8."
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Computer Lab"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFF"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Mr. D. A. Patil"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+                    </TableRow>
+
+
+                </TableLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/aboutLabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:textAppearance="@style/the_informa"
+                android:text="@string/labs_name"
+                android:justificationMode="inter_word"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableRelLyt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/sideNav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_margin="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:fitsSystemWindows="true"
+        android:fontFamily="sans-serif"
+        android:foregroundGravity="center"
+        android:padding="10sp"
+        app:drawerLayoutCornerSize="20dp"
+        app:itemTextColor="@color/red"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/navigation_menu"
+        tools:visibility="gone">
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
+    <!--Redirects to about activity-->
+
+
+

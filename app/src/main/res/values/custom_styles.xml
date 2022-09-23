@@ -20,7 +20,7 @@
     <style name="the_informa">
 
         <item name="android:textSize">
-            16sp
+            17sp
         </item>
 
         <item name="android:letterSpacing">
