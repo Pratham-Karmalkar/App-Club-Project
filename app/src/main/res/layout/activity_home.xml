@@ -36,7 +36,7 @@
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolb"
-                android:layout_width="500dp"
+                android:layout_width="1000dp"
                 android:layout_height="40dp"
                 android:background="?attr/colorPrimary"
                 android:minHeight="?attr/actionBarSize"
@@ -80,9 +80,9 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="131dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="118dp"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="124dp"
                     android:background="@drawable/welcome_to"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -103,14 +103,14 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/about_us_logo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="51dp"
+                    android:layout_width="79dp"
+                    android:layout_height="74dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="179dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="179dp"
+                    android:layout_marginStart="165dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="166dp"
                     android:background="@color/black"
                     app:civ_border_width="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -169,6 +169,7 @@
                     android:layout_marginTop="7dp"
                     android:layout_marginEnd="141dp"
                     android:text="Read More"
+                    android:textAllCaps="false"
                     android:textSize="10dp" />
 
             </RelativeLayout>
@@ -179,6 +180,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="#F8F5F5"
+
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/relativeLayoutAbout">
 
@@ -190,9 +192,9 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="151dp"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginEnd="150dp"
+                    android:layout_marginStart="138dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="137dp"
                     android:background="@drawable/hod_profile_picture"
                     app:civ_border_width="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -201,14 +203,14 @@
 
                 <TextView
                     android:id="@+id/hodDesc"
-                    android:layout_width="238dp"
+                    android:layout_width="316dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/hodPhoto"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="86dp"
+                    android:layout_marginStart="47dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="86dp"
+                    android:layout_marginEnd="47dp"
                     android:fontFamily="@font/inter_bold"
                     android:gravity="center"
                     android:justificationMode="inter_word"
@@ -224,9 +226,9 @@
                     android:layout_below="@+id/hodPhoto"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="65dp"
-                    android:layout_marginTop="33dp"
-                    android:layout_marginEnd="66dp"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginEnd="65dp"
                     android:fontFamily="@font/inter_bold"
                     android:gravity="center|top"
                     android:justificationMode="inter_word"
@@ -245,7 +247,7 @@
                     android:layout_marginStart="58dp"
                     android:layout_marginTop="190dp"
                     android:layout_marginEnd="58dp"
-                    android:background="@drawable/rounded_corners"
+                    android:layout_marginBottom="20dp"
                     android:paddingBottom="50dp">
 
 
@@ -331,19 +333,21 @@
 
                     <Button
                         android:id="@+id/hodProfile"
-                        android:layout_width="wrap_content"
+                        android:layout_width="199dp"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/emailId"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentEnd="true"
-                        android:layout_marginStart="81dp"
-                        android:layout_marginTop="65dp"
-                        android:layout_marginEnd="82dp"
+                        android:layout_marginStart="49dp"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginEnd="49dp"
                         android:backgroundTint="#FFFFFF"
                         android:drawableLeft="@drawable/ic_download"
-                        android:text="Hod\nProfile"
+                        android:gravity="center"
+                        android:text="HOD Profile"
+                        android:textAllCaps="false"
                         android:textColor="#C00000"
-                        android:textSize="10sp"
+                        android:textSize="12sp"
                         app:iconTint="#B8B8B8" />
                 </RelativeLayout>
 
@@ -421,7 +425,7 @@
         app:itemTextColor="@color/red"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/navigation_menu"
-        tools:visibility="visible">
+        tools:visibility="gone">
 
     </com.google.android.material.navigation.NavigationView>
 

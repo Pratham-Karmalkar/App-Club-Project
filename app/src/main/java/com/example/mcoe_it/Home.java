@@ -46,6 +46,7 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
 
+
         //Side Bar Nav Functioning
         NavigationView sideNav;
         DrawerLayout drawerLayout;
@@ -57,6 +58,8 @@ public class Home extends AppCompatActivity {
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.nav_open, R.string.nav_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
+
 
         //Redirecting from sidebar to other activities
         sideNav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -74,6 +77,13 @@ public class Home extends AppCompatActivity {
                     case R.id.about:
                          Intent about = new Intent(Home.this,AboutUsActivity.class);
                           startActivity(about);
+                        finish();
+                        break;
+
+
+                    case R.id.labs:
+                        Intent labs = new Intent(Home.this,LabsActivity.class);
+                        startActivity(labs);
                         finish();
                         break;
 

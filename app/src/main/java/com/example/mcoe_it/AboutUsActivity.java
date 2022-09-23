@@ -53,6 +53,11 @@ public class AboutUsActivity extends AppCompatActivity {
                         finish();
                         break;
 
+                    case R.id.labs:
+                        Intent labs = new Intent(AboutUsActivity.this,LabsActivity.class);
+                        startActivity(labs);
+                        finish();
+                        break;
 
                     case R.id.gall:
                         /*Intent gallery = new Intent(MainActivity.this,<gallery_activity_name>.class);
