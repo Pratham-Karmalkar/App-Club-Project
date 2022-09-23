@@ -89,8 +89,8 @@ public class Home extends AppCompatActivity {
 
 
                     case R.id.gall:
-                        /*Intent gallery = new Intent(MainActivity.this,<gallery_activity_name>.class);
-                          startActivity(gallery);*/
+                        Intent gallery = new Intent(Home.this,GalleryActivity.class);
+                          startActivity(gallery);
                         finish();
                         break;
 

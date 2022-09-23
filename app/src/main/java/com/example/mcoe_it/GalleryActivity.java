@@ -13,13 +13,14 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class LabsActivity extends AppCompatActivity {
+public class GalleryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-        setContentView(R.layout.activity_labs);
+        setContentView(R.layout.activity_gallery);
+
         NavigationView sideNav;
         DrawerLayout drawerLayout;
         Toolbar toolbar;
@@ -39,27 +40,25 @@ public class LabsActivity extends AppCompatActivity {
 
                 switch (itemId) {
                     case R.id.homeAct:
-                        Intent homeActivity = new Intent(LabsActivity.this, Home.class);
+                        Intent homeActivity = new Intent(GalleryActivity.this, Home.class);
                         startActivity(homeActivity);
                         finish();
                         break;
 
                     case R.id.about:
-                        Intent about = new Intent(LabsActivity.this,AboutUsActivity.class);
+                        Intent about = new Intent(GalleryActivity.this,AboutUsActivity.class);
                         startActivity(about);
                         finish();
                         break;
 
-
                     case R.id.labs:
-                        Intent labs = new Intent(LabsActivity.this,LabsActivity.class);
+                        Intent labs = new Intent(GalleryActivity.this,LabsActivity.class);
                         startActivity(labs);
                         finish();
                         break;
 
-
                     case R.id.gall:
-                        Intent gallery = new Intent(LabsActivity.this,GalleryActivity.class);
+                        Intent gallery = new Intent(GalleryActivity.this,GalleryActivity.class);
                         startActivity(gallery);
                         finish();
                         break;
@@ -93,7 +92,5 @@ public class LabsActivity extends AppCompatActivity {
 
 
         });
-
     }
-
 }
