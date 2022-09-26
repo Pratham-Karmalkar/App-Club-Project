@@ -96,8 +96,8 @@ public class Home extends AppCompatActivity {
 
 
                     case R.id.clubs:
-                        /*Intent clubs = new Intent(MainActivity.this,<clubs_activity_name>.class);
-                          startActivity(clubs);*/
+                        Intent clubs = new Intent(Home.this,ClubsActivity.class);
+                          startActivity(clubs);
                         finish();
                         break;
 

@@ -66,8 +66,8 @@ public class LabsActivity extends AppCompatActivity {
 
 
                     case R.id.clubs:
-                        /*Intent clubs = new Intent(MainActivity.this,<clubs_activity_name>.class);
-                          startActivity(clubs);*/
+                        Intent clubs = new Intent(LabsActivity.this,ClubsActivity.class);
+                        startActivity(clubs);
                         finish();
                         break;
 
@@ -77,6 +77,8 @@ public class LabsActivity extends AppCompatActivity {
                           startActivity(facInfo);*/
                         finish();
                         break;
+
+
 
 
                     case R.id.curriculum:
