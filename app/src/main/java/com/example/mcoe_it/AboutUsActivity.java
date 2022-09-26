@@ -81,8 +81,8 @@ public class AboutUsActivity extends AppCompatActivity {
 
 
                     case R.id.curriculum:
-                        /*Intent curriculum = new Intent(MainActivity.this,<curriculum_activity_name>.class);
-                          startActivity(curriculum);*/
+                        Intent curriculum = new Intent(AboutUsActivity.this,CurriculumActivity.class);
+                          startActivity(curriculum);
                         finish();
                         break;
 

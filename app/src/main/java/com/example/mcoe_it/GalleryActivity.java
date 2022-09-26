@@ -79,8 +79,8 @@ public class GalleryActivity extends AppCompatActivity {
 
 
                     case R.id.curriculum:
-                        /*Intent curriculum = new Intent(MainActivity.this,<curriculum_activity_name>.class);
-                          startActivity(curriculum);*/
+                        Intent curriculum = new Intent(GalleryActivity.this,CurriculumActivity.class);
+                          startActivity(curriculum);
                         finish();
                         break;
 
