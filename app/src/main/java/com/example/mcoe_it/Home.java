@@ -71,48 +71,41 @@ public class Home extends AppCompatActivity {
                     case R.id.homeAct:
                         Intent homeActivity = new Intent(Home.this, Home.class);
                         startActivity(homeActivity);
-                        finish();
                         break;
 
                     case R.id.about:
                          Intent about = new Intent(Home.this,AboutUsActivity.class);
                           startActivity(about);
-                        finish();
                         break;
 
 
                     case R.id.labs:
                         Intent labs = new Intent(Home.this,LabsActivity.class);
                         startActivity(labs);
-                        finish();
                         break;
 
 
                     case R.id.gall:
                         Intent gallery = new Intent(Home.this,GalleryActivity.class);
                           startActivity(gallery);
-                        finish();
                         break;
 
 
                     case R.id.clubs:
                         Intent clubs = new Intent(Home.this,ClubsActivity.class);
                           startActivity(clubs);
-                        finish();
                         break;
 
 
                     case R.id.facultyInfo:
                         Intent facInfo = new Intent(Home.this,Faculty.class);
                         startActivity(facInfo);
-                        finish();
                         break;
 
 
                     case R.id.curriculum:
                         Intent curriculum = new Intent(Home.this,CurriculumActivity.class);
                           startActivity(curriculum);
-                        finish();
                         break;
 
 

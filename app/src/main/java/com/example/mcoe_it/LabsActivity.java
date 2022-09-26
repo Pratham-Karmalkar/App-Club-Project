@@ -41,41 +41,35 @@ public class LabsActivity extends AppCompatActivity {
                     case R.id.homeAct:
                         Intent homeActivity = new Intent(LabsActivity.this, Home.class);
                         startActivity(homeActivity);
-                        finish();
                         break;
 
                     case R.id.about:
                         Intent about = new Intent(LabsActivity.this,AboutUsActivity.class);
                         startActivity(about);
-                        finish();
                         break;
 
 
                     case R.id.labs:
                         Intent labs = new Intent(LabsActivity.this,LabsActivity.class);
                         startActivity(labs);
-                        finish();
                         break;
 
 
                     case R.id.gall:
                         Intent gallery = new Intent(LabsActivity.this,GalleryActivity.class);
                         startActivity(gallery);
-                        finish();
                         break;
 
 
                     case R.id.clubs:
                         Intent clubs = new Intent(LabsActivity.this,ClubsActivity.class);
                         startActivity(clubs);
-                        finish();
                         break;
 
 
                     case R.id.facultyInfo:
-                        /*Intent facInfo = new Intent(MainActivity.this,<facInfo_activity_name>.class);
-                          startActivity(facInfo);*/
-                        finish();
+                      Intent facInfo = new Intent(LabsActivity.this,Faculty.class);
+                        startActivity(facInfo);
                         break;
 
 
@@ -83,8 +77,7 @@ public class LabsActivity extends AppCompatActivity {
 
                     case R.id.curriculum:
                         Intent curriculum = new Intent(LabsActivity.this,CurriculumActivity.class);
-                          startActivity(curriculum);
-                        finish();
+                        startActivity(curriculum);
                         break;
 
 

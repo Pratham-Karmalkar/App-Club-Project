@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:fitsSystemWindows="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/scrollViewMP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constLytMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/closeBtPhix">
+
+
+            <ImageView
+                android:id="@+id/appclublogo"
+                android:layout_width="131dp"
+                android:layout_height="134dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="128dp"
+                android:background="@drawable/graphix_club" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appclublogo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="center"
+                android:text="Graphix Club"
+                android:textColor="#C00000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appclublogo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="6dp"
+                android:justificationMode="inter_word"
+                android:lineHeight="25sp"
+                android:text="@string/graphix_club"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/closeBtPhix"
+            android:layout_width="76dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corners"
+            android:text="X"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+

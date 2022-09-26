@@ -76,48 +76,46 @@ public class Faculty extends AppCompatActivity {
                     case R.id.homeAct:
                         Intent homeActivity = new Intent(Faculty.this, Home.class);
                         startActivity(homeActivity);
-                        finish();
+
                         break;
 
                     case R.id.about:
                         Intent about = new Intent(Faculty.this, AboutUsActivity.class);
                         startActivity(about);
-                        finish();
+
                         break;
 
 
                     case R.id.labs:
                         Intent labs = new Intent(Faculty.this, LabsActivity.class);
                         startActivity(labs);
-                        finish();
+
                         break;
 
 
                     case R.id.gall:
-                        /*Intent gallery = new Intent(MainActivity.this,<gallery_activity_name>.class);
-                          startActivity(gallery);*/
-                        finish();
+                        Intent gallery = new Intent(Faculty.this,GalleryActivity.class);
+                          startActivity(gallery);
+
                         break;
 
 
                     case R.id.clubs:
-                        /*Intent clubs = new Intent(MainActivity.this,<clubs_activity_name>.class);
-                          startActivity(clubs);*/
-                        finish();
+                        Intent clubs = new Intent(Faculty.this,ClubsActivity.class);
+                          startActivity(clubs);
+
                         break;
 
 
                     case R.id.facultyInfo:
-                        /*Intent facInfo = new Intent(MainActivity.this,<facInfo_activity_name>.class);
-                          startActivity(facInfo);*/
-                        finish();
+                        Intent facInfo = new Intent(Faculty.this,Faculty.class);
+                          startActivity(facInfo);
                         break;
 
 
                     case R.id.curriculum:
-                        /*Intent curriculum = new Intent(MainActivity.this,<curriculum_activity_name>.class);
-                          startActivity(curriculum);*/
-                        finish();
+                        Intent curriculum = new Intent(Faculty.this,CurriculumActivity.class);
+                          startActivity(curriculum);
                         break;
 
                 }

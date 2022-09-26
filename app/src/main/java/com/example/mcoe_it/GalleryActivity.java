@@ -42,46 +42,39 @@ public class GalleryActivity extends AppCompatActivity {
                     case R.id.homeAct:
                         Intent homeActivity = new Intent(GalleryActivity.this, Home.class);
                         startActivity(homeActivity);
-                        finish();
                         break;
 
                     case R.id.about:
                         Intent about = new Intent(GalleryActivity.this,AboutUsActivity.class);
                         startActivity(about);
-                        finish();
                         break;
 
                     case R.id.labs:
                         Intent labs = new Intent(GalleryActivity.this,LabsActivity.class);
                         startActivity(labs);
-                        finish();
                         break;
 
                     case R.id.gall:
                         Intent gallery = new Intent(GalleryActivity.this,GalleryActivity.class);
                         startActivity(gallery);
-                        finish();
                         break;
 
 
                     case R.id.clubs:
                         Intent clubs = new Intent(GalleryActivity.this,ClubsActivity.class);
                         startActivity(clubs);
-                        finish();
                         break;
 
 
                     case R.id.facultyInfo:
-                        /*Intent facInfo = new Intent(MainActivity.this,<facInfo_activity_name>.class);
-                          startActivity(facInfo);*/
-                        finish();
+                        Intent facInfo = new Intent(GalleryActivity.this,Faculty.class);
+                          startActivity(facInfo);
                         break;
 
 
                     case R.id.curriculum:
                         Intent curriculum = new Intent(GalleryActivity.this,CurriculumActivity.class);
                         startActivity(curriculum);
-                        finish();
                         break;
 
 
