@@ -25,6 +25,11 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MCOEIT.NoActionBar" />
         <activity
+            android:name=".Faculty"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MCOEIT.NoActionBar" />
+        <activity
             android:name=".GalleryActivity"
             android:exported="false"
             android:screenOrientation="portrait"

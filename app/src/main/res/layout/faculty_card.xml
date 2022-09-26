@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="250dp"
+                android:layout_height="140dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="138dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="137dp"
+                android:src="@drawable/hod_profile_picture"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="10dp" />
+
+            <TextView
+                android:id="@+id/card_name"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="47dp"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:text="DR.MRS.S.D.DESHPANDE"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_title"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="66dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="65dp"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center|top"
+                android:justificationMode="inter_word"
+                android:text="Head Of Department"
+                android:textColor="#726E6E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_qualification"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_title"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="47dp"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:text="QUALIFICATION"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_qualification_info"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_qualification"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="66dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="65dp"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center|top"
+                android:justificationMode="inter_word"
+                android:text="Ph.D"
+                android:textColor="#726E6E"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/card_experience"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_qualification_info"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="47dp"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:text="EXPERIENCE"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_experience_info"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_experience"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="66dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="65dp"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center|top"
+                android:justificationMode="inter_word"
+                android:text="25+ Years"
+                android:textColor="#726E6E"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/card_email"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_experience_info"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="47dp"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:text="EMAIL ID"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_email_info"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_email"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="66dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="65dp"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center|top"
+                android:justificationMode="inter_word"
+                android:text="hodit@moderncoe.edu.in"
+                android:textColor="#726E6E"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -103,8 +103,8 @@ public class Home extends AppCompatActivity {
 
 
                     case R.id.facultyInfo:
-                        /*Intent facInfo = new Intent(MainActivity.this,<facInfo_activity_name>.class);
-                          startActivity(facInfo);*/
+                        Intent facInfo = new Intent(Home.this,Faculty.class);
+                        startActivity(facInfo);
                         finish();
                         break;
 
