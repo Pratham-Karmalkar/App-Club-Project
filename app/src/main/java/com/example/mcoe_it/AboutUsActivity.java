@@ -60,8 +60,8 @@ public class AboutUsActivity extends AppCompatActivity {
                         break;
 
                     case R.id.gall:
-                        /*Intent gallery = new Intent(MainActivity.this,<gallery_activity_name>.class);
-                          startActivity(gallery);*/
+                        Intent gallery = new Intent(AboutUsActivity.this,GalleryActivity.class);
+                        startActivity(gallery);
                         finish();
                         break;
 
@@ -81,8 +81,8 @@ public class AboutUsActivity extends AppCompatActivity {
 
 
                     case R.id.curriculum:
-                        /*Intent curriculum = new Intent(MainActivity.this,<curriculum_activity_name>.class);
-                          startActivity(curriculum);*/
+                        Intent curriculum = new Intent(AboutUsActivity.this,CurriculumActivity.class);
+                          startActivity(curriculum);
                         finish();
                         break;
 

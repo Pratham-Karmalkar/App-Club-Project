@@ -8,18 +8,22 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class LabsActivity extends AppCompatActivity {
+public class CurriculumActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-        setContentView(R.layout.activity_labs);
+        setContentView(R.layout.activity_curriculum);
+
         NavigationView sideNav;
         DrawerLayout drawerLayout;
         Toolbar toolbar;
@@ -39,27 +43,25 @@ public class LabsActivity extends AppCompatActivity {
 
                 switch (itemId) {
                     case R.id.homeAct:
-                        Intent homeActivity = new Intent(LabsActivity.this, Home.class);
+                        Intent homeActivity = new Intent(CurriculumActivity.this, Home.class);
                         startActivity(homeActivity);
                         finish();
                         break;
 
                     case R.id.about:
-                        Intent about = new Intent(LabsActivity.this,AboutUsActivity.class);
+                        Intent about = new Intent(CurriculumActivity.this, AboutUsActivity.class);
                         startActivity(about);
                         finish();
                         break;
 
-
                     case R.id.labs:
-                        Intent labs = new Intent(LabsActivity.this,LabsActivity.class);
+                        Intent labs = new Intent(CurriculumActivity.this, LabsActivity.class);
                         startActivity(labs);
                         finish();
                         break;
 
-
                     case R.id.gall:
-                        Intent gallery = new Intent(LabsActivity.this,GalleryActivity.class);
+                        Intent gallery = new Intent(CurriculumActivity.this, GalleryActivity.class);
                         startActivity(gallery);
                         finish();
                         break;
@@ -80,12 +82,10 @@ public class LabsActivity extends AppCompatActivity {
 
 
                     case R.id.curriculum:
-                        Intent curriculum = new Intent(LabsActivity.this,CurriculumActivity.class);
-                          startActivity(curriculum);
+                        Intent curriculum = new Intent(CurriculumActivity.this,CurriculumActivity.class);
+                        startActivity(curriculum);
                         finish();
                         break;
-
-
                 }
 
                 return false;
@@ -94,6 +94,16 @@ public class LabsActivity extends AppCompatActivity {
 
         });
 
-    }
 
+        TextView dwnFe = findViewById(R.id.downloadFE);
+        dwnFe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("http://moderncoe.edu.in/pdf/FisEng/CurriculumAndAcademicCalendar/SyllabusStructure/First_Year_Engineering_2019_Patt.Syllabus_05.072019.pdf");
+                Intent intent= new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+
+    }
 }
