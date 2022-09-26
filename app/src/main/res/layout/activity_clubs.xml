@@ -42,6 +42,74 @@
                 android:theme="?attr/actionBarTheme"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/clubtxt"
+                android:layout_width="292dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="140dp"
+                android:gravity="center"
+                android:text="Clubs"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="@id/toolb"
+                app:layout_constraintTop_toTopOf="@id/toolb" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clubtxt">
+
+
+                <RelativeLayout
+                    android:layout_width="393dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="9dp">
+
+
+                    <ImageView
+                        android:id="@+id/appclublogo"
+                        android:layout_width="131dp"
+                        android:layout_height="144dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="128dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="128dp"
+                        android:background="@drawable/app_club" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/appclublogo"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="11dp"
+                        android:justificationMode="inter_word"
+                        android:lineHeight="25sp"
+                        android:text="@string/app_club"
+                        android:textColor="@color/black" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

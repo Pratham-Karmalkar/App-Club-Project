@@ -68,21 +68,21 @@ public class CurriculumActivity extends AppCompatActivity {
 
 
                     case R.id.clubs:
-                        /*Intent clubs = new Intent(MainActivity.this,<clubs_activity_name>.class);
-                          startActivity(clubs);*/
+                        Intent clubs = new Intent(CurriculumActivity.this,ClubsActivity.class);
+                        startActivity(clubs);
                         finish();
                         break;
 
 
                     case R.id.facultyInfo:
-                        /*Intent facInfo = new Intent(MainActivity.this,<facInfo_activity_name>.class);
+                        /*Intent facInfo = new Intent(CurriculumActivity.this,<facInfo_activity_name>.class);
                           startActivity(facInfo);*/
                         finish();
                         break;
 
 
                     case R.id.curriculum:
-                        Intent curriculum = new Intent(CurriculumActivity.this,CurriculumActivity.class);
+                        Intent curriculum = new Intent(CurriculumActivity .this,CurriculumActivity.class);
                         startActivity(curriculum);
                         finish();
                         break;

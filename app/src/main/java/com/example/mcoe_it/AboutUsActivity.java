@@ -67,8 +67,8 @@ public class AboutUsActivity extends AppCompatActivity {
 
 
                     case R.id.clubs:
-                        /*Intent clubs = new Intent(MainActivity.this,<clubs_activity_name>.class);
-                          startActivity(clubs);*/
+                        Intent clubs = new Intent(AboutUsActivity.this,ClubsActivity.class);
+                        startActivity(clubs);
                         finish();
                         break;
 
@@ -82,10 +82,9 @@ public class AboutUsActivity extends AppCompatActivity {
 
                     case R.id.curriculum:
                         Intent curriculum = new Intent(AboutUsActivity.this,CurriculumActivity.class);
-                          startActivity(curriculum);
+                        startActivity(curriculum);
                         finish();
                         break;
-
 
                 }
 
