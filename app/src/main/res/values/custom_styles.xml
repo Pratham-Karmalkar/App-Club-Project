@@ -32,7 +32,7 @@
         </item>
 
         <item name="android:fontFamily">
-           @font/inter_thin
+          sans-serif
         </item>
 
     </style>

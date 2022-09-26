@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="false"
+    android:background="#F8F5F5"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".CurriculumActivity"
     tools:openDrawer="start">
@@ -89,45 +90,48 @@
 
             </RelativeLayout>
 
+
             <RelativeLayout
+                android:id="@+id/RelFE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="6dp"
                 android:orientation="vertical"
+                android:background="#F8F5F5"
                 android:padding="10sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/RelFE"
                 app:layout_constraintTop_toBottomOf="@+id/relativeLayoutWel"
-                app:layout_constraintVertical_bias="0.048">
+                app:layout_constraintVertical_bias="0.0">
+
 
                 <TextView
                     android:id="@+id/textViewFE"
                     android:layout_width="318dp"
-                    android:layout_height="59dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
                     android:gravity="center"
                     android:text="FIRST YEAR (FE)"
                     android:textColor="#C00000"
                     android:textSize="22sp" />
 
-
                 <TextView
                     android:id="@+id/textViewFEsyl"
-                    android:layout_width="367dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textViewFE"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="14dp"
+                    android:layout_marginStart="12dp"
                     android:layout_marginTop="4dp"
-                    android:layout_marginEnd="14dp"
+                    android:layout_marginEnd="12dp"
                     android:text="@string/fe_syl"
                     android:textAppearance="@style/the_informa" />
 
@@ -139,11 +143,192 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="14dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="2dp"
                     android:layout_marginEnd="14dp"
-                    android:textSize="18sp"
                     android:text="@string/downFE"
-                    android:textColor="#C00000" />
+                    android:textColor="#C00000"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relSE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="#F8F5F5"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/relTE"
+                app:layout_constraintTop_toBottomOf="@+id/RelFE"
+                app:layout_constraintVertical_bias="0.011">
+
+                <TextView
+                    android:id="@+id/textViewSE"
+                    android:layout_width="318dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="SECOND YEAR (SE)"
+                    android:textColor="#C00000"
+                    android:textSize="22sp" />
+
+
+                <TextView
+                    android:id="@+id/textViewSESyl"
+                    android:layout_width="367dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewSE"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="@string/se_sylabus"
+                    android:textAppearance="@style/the_informa" />
+
+                <TextView
+                    android:id="@+id/downloadSE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewSESyl"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="14dp"
+                    android:text="@string/downSE"
+                    android:textColor="#C00000"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relTE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="#F8F5F5"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/relBE"
+                app:layout_constraintTop_toBottomOf="@+id/relSE"
+                app:layout_constraintVertical_bias="0.011">
+
+                <TextView
+                    android:id="@+id/textViewTE"
+                    android:layout_width="318dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="THIRD YEAR (TE)"
+                    android:textColor="#C00000"
+                    android:textSize="22sp" />
+
+
+                <TextView
+                    android:id="@+id/textViewTESyl"
+                    android:layout_width="367dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewTE"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="@string/te_sylabus"
+                    android:textAppearance="@style/the_informa" />
+
+                <TextView
+                    android:id="@+id/downloadTE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewTESyl"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="14dp"
+                    android:text="@string/downTE"
+                    android:textColor="#C00000"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relBE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="#F8F5F5"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relTE"
+                app:layout_constraintVertical_bias="0.011">
+
+                <TextView
+                    android:id="@+id/textViewBE"
+                    android:layout_width="318dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="FINAL YEAR (BE)"
+                    android:textColor="#C00000"
+                    android:textSize="22sp" />
+
+
+                <TextView
+                    android:id="@+id/textViewBESyl"
+                    android:layout_width="367dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewBE"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="@string/be_sylabus"
+                    android:textAppearance="@style/the_informa" />
+
+                <TextView
+                    android:id="@+id/downloadBE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewBESyl"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="14dp"
+                    android:text="@string/downBE"
+                    android:textColor="#C00000"
+                    android:textSize="18sp" />
 
             </RelativeLayout>
 
