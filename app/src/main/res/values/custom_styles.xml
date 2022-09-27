@@ -31,5 +31,9 @@
             #003A58
         </item>
 
+        <item name="android:fontFamily">
+          sans-serif
+        </item>
+
     </style>
 </resources>

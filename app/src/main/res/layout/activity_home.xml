@@ -151,7 +151,7 @@
                     android:layout_marginTop="153dp"
                     android:layout_marginEnd="16dp"
                     android:background="@drawable/rounded_corners"
-                    android:fontFamily="3@font/inter"
+                    android:fontFamily="sans-serif"
                     android:justificationMode="inter_word"
                     android:lineHeight="23dp"
                     android:padding="18dp"
