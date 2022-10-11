@@ -103,7 +103,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/relativeLayoutWel">
 
 
-                <com.google.android.material.imageview.ShapeableImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/about_us_logo"
                     android:layout_width="79dp"
                     android:layout_height="74dp"
@@ -113,12 +113,9 @@
                     android:layout_marginStart="165dp"
                     android:layout_marginTop="6dp"
                     android:layout_marginEnd="166dp"
-                    android:background="@color/black"
-                    app:civ_border_width="10dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:shapeAppearanceOverlay="@style/circular"
-                    app:srcCompat="@drawable/home_about_department_images_logo"
-                    tools:visibility="visible" />
+                    android:src="@drawable/gear"
+                    app:civ_border_color="#000000"
+                    app:civ_border_width="4dp" />
 
                 <TextView
                     android:id="@+id/aboutUs"
