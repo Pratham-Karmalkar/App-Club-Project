@@ -66,6 +66,7 @@
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="77dp"
                 android:layout_marginEnd="6dp"
+                android:padding="7sp"
                 android:justificationMode="inter_word"
                 android:lineHeight="25sp"
                 android:text="@string/pixInsight_club"

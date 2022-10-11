@@ -45,7 +45,7 @@ public class LoadingScreen extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 700);
+        }, 900);
     }
 
 
@@ -55,6 +55,7 @@ public class LoadingScreen extends AppCompatActivity {
         a.reset();
         ImageView tv = (ImageView) findViewById(R.id.logoImage);
         TextView txv = (TextView) findViewById(R.id.deptITTransition);
+        TextView cpy = (TextView) findViewById(R.id.copyright);
         tv.clearAnimation();
         tv.startAnimation(a);
         tv.setVisibility(View.INVISIBLE);
@@ -62,6 +63,7 @@ public class LoadingScreen extends AppCompatActivity {
         txv.clearAnimation();
         txv.startAnimation(a);
         txv.setVisibility(View.INVISIBLE);
+
 
     }
 

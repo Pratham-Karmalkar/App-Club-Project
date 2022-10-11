@@ -35,5 +35,19 @@
         app:layout_constraintTop_toBottomOf="@+id/logoImage"
         app:layout_constraintVertical_bias="0.075" />
 
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="392dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="\u00A9 2022 PES Modern College Of Engineering"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
