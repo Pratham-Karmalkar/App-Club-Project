@@ -195,7 +195,7 @@
                     android:layout_marginStart="138dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="137dp"
-                    android:src="@drawable/hod_profile_picture"
+                    android:src="@drawable/hod_photo_new"
                     app:civ_border_color="#FFFFFF"
                     app:civ_border_width="10dp" />
 

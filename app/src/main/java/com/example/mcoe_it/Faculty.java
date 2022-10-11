@@ -23,7 +23,6 @@ public class Faculty extends AppCompatActivity {
 
     SliderView sliderView;
     int[] images = {R.drawable.card1,
-            R.drawable.card2,
             R.drawable.card3,
             R.drawable.card4,
             R.drawable.card5,
@@ -34,6 +33,7 @@ public class Faculty extends AppCompatActivity {
             R.drawable.card10,
             R.drawable.card11,
             R.drawable.card12,
+            R.drawable.card13,
             R.drawable.card14,
             R.drawable.card15,
             R.drawable.card16,
@@ -43,10 +43,7 @@ public class Faculty extends AppCompatActivity {
             R.drawable.card20,
             R.drawable.card21,
             R.drawable.card22,
-            R.drawable.card23,
-            R.drawable.card24,
-            R.drawable.card25,
-            R.drawable.card26,};
+            R.drawable.card23,};
 
 
     @Override
