@@ -235,19 +235,49 @@
                     android:textSize="11dp"
                     android:textStyle="bold" />
 
+                <Button
+                    android:id="@+id/hodProfile"
+                    android:layout_width="199dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hodPosition"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="49dp"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/ic_download"
+                    android:gravity="center"
+                    android:text="HOD Profile"
+                    android:textAllCaps="false"
+                    android:textColor="#C00000"
+                    android:textSize="12sp"
+                    app:iconTint="#B8B8B8" />
+                <!--Redirects to about activity-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relDescrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#F8F5F5"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayoutHod">
+
                 <RelativeLayout
-                    android:id="@+id/relDescrip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="58dp"
-                    android:layout_marginTop="190dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="58dp"
                     android:layout_marginBottom="20dp"
-                    android:paddingBottom="50dp">
-
+                    android:paddingBottom="30dp">
 
                     <TextView
                         android:id="@+id/intake1"
@@ -294,7 +324,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_alignParentEnd="true"
                         android:layout_marginStart="-1dp"
-                        android:layout_marginTop="33dp"
+                        android:layout_marginTop="13dp"
                         android:layout_marginEnd="2dp"
                         android:autoLink="email"
                         android:drawableLeft="@drawable/ic_email"
@@ -318,6 +348,7 @@
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="12dp"
                         android:autoLink="phone"
                         android:drawableLeft="@drawable/ic_phn"
                         android:fontFamily="@font/inter_bold"
@@ -328,31 +359,7 @@
                         android:textColorLink="@color/black"
                         android:textSize="16dp"
                         android:textStyle="bold" />
-
-                    <Button
-                        android:id="@+id/hodProfile"
-                        android:layout_width="199dp"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/emailId"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginStart="49dp"
-                        android:layout_marginTop="52dp"
-                        android:layout_marginEnd="49dp"
-                        android:backgroundTint="#FFFFFF"
-                        android:drawableLeft="@drawable/ic_download"
-                        android:gravity="center"
-                        android:text="HOD Profile"
-                        android:textAllCaps="false"
-                        android:textColor="#C00000"
-                        android:textSize="12sp"
-                        app:iconTint="#B8B8B8" />
                 </RelativeLayout>
-
-
-                <!--Redirects to about activity-->
-
-
             </RelativeLayout>
 
             <LinearLayout
@@ -367,7 +374,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/relativeLayoutHod"
+                app:layout_constraintTop_toBottomOf="@+id/relDescrip"
                 app:layout_constraintVertical_bias="0.0">
 
 
